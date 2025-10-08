@@ -82,6 +82,17 @@ h4 {
     font-weight: 600;
   }
 
+  .bttn:hover {
+    background-image: linear-gradient(
+      to right,
+      #eeac42,
+      #e7bc6b,
+      #f7d592,
+      #e7bc6b,
+      #eeac42
+    );
+  }
+
   .top-bar {
     background-image: linear-gradient(to bottom, #dbae5a, #bc7f1a);
   }
@@ -130,6 +141,22 @@ h4 {
   );
 }
 
+#section-7 {
+  background-image: linear-gradient(to bottom, var(--color-dark-blue), #0f295d);
+}
+
 .gold-shadow {
   box-shadow: -10px 10px #c78c2b;
+}
+
+.gold-shadow.note {
+  box-shadow: -4px 4px #c78c2b;
+}
+
+.c-list li {
+  margin-bottom: 15px;
+}
+
+a.bttn {
+  display: inline-block;
 }
