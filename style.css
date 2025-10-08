@@ -1,0 +1,135 @@
+:root {
+  --color-dark-blue: #0c121e;
+  --color-darker-blue: #040810;
+  --color-gold: #dbae5a;
+  --color-dark-gold: #c78c2b;
+  --color-light-gold: #f0c876;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 80%);
+}
+
+h1,
+h2 {
+  font-family: "Luxury", serif;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+h5 {
+  text-transform: none;
+}
+
+/* h1 {
+  font-size: 96px;
+} */
+/* h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 28px;
+} */
+/* h5 {
+  font-size: 20px;
+} */
+.heading-bullet img {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* @import "tailwindcss";
+
+@theme {
+  --color-dark-blue: #0c121e;
+  --color-darker-blue: #040810;
+  --color-golden: #dbae5a;
+  --color-dark-golden: #c78c2b;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bttn {
+    background-image: linear-gradient(
+      to right,
+      #c78c2b,
+      #dbae5a,
+      #f0c876,
+      #dbae5a,
+      #c78c2b
+    );
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #ffab00;
+    font-weight: 600;
+  }
+
+  .top-bar {
+    background-image: linear-gradient(to bottom, #dbae5a, #bc7f1a);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: Luxury;
+    src: url(font/Luxury.ttf);
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url(font/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    src: url(font/Poppins-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url(font/Poppins-Bold.ttf);
+  }
+}
+
+#hero-banner {
+  background-image: url(images/Hero-banner.webp);
+  background-size: cover;
+}
+
+#section-3 {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-dark-blue),
+    var(--color-darker-blue)
+  );
+}
+
+#section-5 {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-darker-blue),
+    var(--color-dark-blue)
+  );
+}
+
+.gold-shadow {
+  box-shadow: -10px 10px #c78c2b;
+}

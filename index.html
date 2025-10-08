@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <title>Victor with Ash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <p class="p-1 text-base md:text-xl lg:text-2xl text-center text-black">
+        <strong>Attention:</strong> Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do
+      </p>
+    </div>
+
+    <section id="hero-banner">
+      <nav
+        class="absolute w-full after:pointer-events-none after:absolute after:bottom-0 after:h-px"
+      >
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                command="--toggle"
+                commandfor="mobile-menu"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  data-slot="icon"
+                  aria-hidden="true"
+                  class="size-6 in-aria-expanded:hidden"
+                >
+                  <path
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  data-slot="icon"
+                  aria-hidden="true"
+                  class="size-6 not-in-aria-expanded:hidden"
+                >
+                  <path
+                    d="M6 18 18 6M6 6l12 12"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-between">
+              <div class="flex shrink-0 items-center">
+                <img
+                  src="images/Victory-with-ash-logo.svg"
+                  alt="Victor with Ash"
+                  class="w-auto"
+                />
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                  <a
+                    href="#"
+                    aria-current="page"
+                    class="rounded-md bg-gray-950/50 px-3 py-2 text-5 font-medium text-white uppercase"
+                    >Home</a
+                  >
+                  <a
+                    href="#"
+                    class="rounded-md px-3 py-2 text-5 font-medium text-gray-300 hover:bg-white/5 hover:text-white uppercase"
+                    >About</a
+                  >
+                  <a
+                    href="#"
+                    class="rounded-md px-3 py-2 text-5 font-medium text-gray-300 hover:bg-white/5 hover:text-white uppercase"
+                    >Training and Benefits</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            ></div>
+          </div>
+        </div>
+
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+          <div class="bg-black space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+            <a
+              href="#"
+              aria-current="page"
+              class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white uppercase"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white uppercase"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white uppercase"
+              >Training and Benefits</a
+            >
+          </div>
+        </el-disclosure>
+      </nav>
+
+      <div id="hero-content-inner" class="pt-30 sm:pt-35">
+        <div
+          class="w-full md:w-4/5 flex lg:flex-row flex-col-reverse m-auto md:items-center gap-10 px-7.5"
+        >
+          <img
+            class="w-3/5 md:w-1/2"
+            src="images/Ash-mufareh-headshot.webp"
+            alt="Ash Mufareh"
+          />
+
+          <div class="lg:w-[550px] w-full">
+            <h1 class="text-6xl lg:text-7xl xl:text-8xl">VICTORY WITH ASH</h1>
+            <h3 class="heading-bullet text-4xl xl:text-5xl">
+              RISE<img src="images/diamond-icon.png" alt="" />RESET<img
+                src="images/diamond-icon.png"
+                alt=""
+              />REFOCUS
+              <!-- <ul class="heading-ul">
+                <li class="c-list">RISE</li>
+                <li>RESET</li>
+                <li>REFOCUS</li>
+              </ul> -->
+            </h3>
+            <h4 class="text-xl xl:text-2xl">
+              TO SUCCEED IN LIFE AND WIN AT BUSINESS.
+            </h4>
+            <p class="py-5">
+              Victory With Ash is a principled, invitation-only, free private
+              membership community designed to help you grow as a person, build
+              real skills, and make a positive impact on the world.
+            </p>
+            <button class="bttn">Apply Now to Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-2"
+      class="py-20 p-7.5 bg-(--color-dark-blue) lg:gap-12 gap-5 flex flex-col"
+    >
+      <h2 class="uppercase text-5xl text-center">Your Path to Victory</h2>
+      <div
+        class="cards flex flex-row gap-5 lg:w-[1079px] w-full max-w-full m-auto flex-wrap"
+      >
+        <div
+          class="card card-1 border rounded-lg border-[#393E47] hover:border-[#DBAE5A] hover:bg-[#1C1D20] flex lg:flex-1 flex-col content-between w-full"
+        >
+          <img
+            class="object-cover h-60 rounded-lg"
+            src="images/modern-building-with-glass-panels.webp"
+            alt="modern-building-with-glass-panels"
+          />
+          <div class="card-content-wrapper p-5 flex gap-5 flex-col">
+            <div class="card-content">
+              <h4 class="text-[28px] font-bold">Rise</h4>
+              <p class="">
+                Take action. Turn obstacles into victories. Ascend to
+                magnificent new heights.
+              </p>
+            </div>
+            <div><button class="bttn px-3.5">Read More</button></div>
+          </div>
+        </div>
+        <div
+          class="card card-2 border rounded-lg border-[#393E47] hover:border-[#DBAE5A] hover:bg-[#1C1D20] flex lg:flex-1 flex-col content-between w-full"
+        >
+          <img
+            class="object-cover h-60 rounded-lg"
+            src="images/modern-building-with-glass-panels.webp"
+            alt="modern-building-with-glass-panels"
+          />
+          <div class="card-content-wrapper p-5 flex gap-5 flex-col">
+            <div class="card-content">
+              <h4 class="text-[28px] font-bold">Market Trends Analysis 2024</h4>
+              <p class="">
+                Shatter limiting beliefs. Realign your mind and heart. Aspire to
+                achieving big, bold, and beautiful dreams.
+              </p>
+            </div>
+            <div><button class="bttn px-3.5">Read More</button></div>
+          </div>
+        </div>
+        <div
+          class="card card-3 border rounded-lg border-[#393E47] hover:border-[#DBAE5A] hover:bg-[#1C1D20] flex lg:flex-1 flex-col content-between w-full"
+        >
+          <img
+            class="object-cover h-60 rounded-lg"
+            src="images/modern-building-with-glass-panels.webp"
+            alt="modern-building-with-glass-panels"
+          />
+          <div class="card-content-wrapper p-5 flex gap-5 flex-col">
+            <div class="card-content">
+              <h4 class="text-[28px] font-bold">Rise</h4>
+              <p class="">
+                Take action. Turn obstacles into victories. Ascend to
+                magnificent new heights.
+              </p>
+            </div>
+            <div><button class="bttn px-3.5">Read More</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-3" class="py-20 p-7.5 lg:gap-12 gap-8 flex flex-col">
+      <div class="content-wrapper gap-6 flex flex-col">
+        <h2 class="uppercase text-5xl text-center">Your Path to Real Growth</h2>
+        <p class="w-xl w-full max-w-full m-auto text-center">
+          Take the first 30–90 days to reduce stress, build confidence, and gain
+          the skills to lead, communicate, and grow with purpose.
+        </p>
+      </div>
+
+      <div
+        class="content-wrapper lg:w-6xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-center gap-14"
+      >
+        <div class="md:w-1/2 w-full">
+          <h4 class="text-3xl font-bold">Unlock Your First 90 Days</h4>
+          <p class="text-lg text-[#f0c876]">
+            Exclusive training & insights from Mr. Ash
+          </p>
+          <p class="py-5">
+            Discover practical strategies designed to help you take control of
+            your future. From reducing daily stress and building unshakable
+            confidence to setting bold, measurable goals, you'll gain the
+            clarity and direction you need to move forward. Along the way,
+            you'll strengthen your communication and leadership skills, learning
+            how to connect, persuade, and inspire others with ease. You'll also
+            explore modern business strategies and the latest AI tools to work
+            smarter, open new streams of income, and create lasting personal and
+            professional growth. Every lesson is practical and actionable,
+            giving you the skills to create real change you can feel, see, and
+            measure in your life and business.
+          </p>
+          <button class="bttn px-3.5">
+            Register today to get you access code
+          </button>
+        </div>
+        <div class="md:w-1/2 w-full">
+          <img
+            class="gold-shadow object-cover"
+            src="images/ai-in-business-event.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      id="section-4"
+      class="bg-[#040810] py-20 p-7.5 lg:gap-12 gap-8 flex flex-col"
+    >
+      <div class="text-center">
+        <h2 class="text-[40px] text-white">What You Should Know About</h2>
+        <h2 class="text-6xl text-[#C78C2B]">ASH Mufareh</h2>
+      </div>
+      <div
+        class="content-wrapper lg:w-4xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-center gap-15"
+      >
+        <div class="md:w-2/5 w-full">
+          <img
+            class="gold-shadow object-cover"
+            src="images/Ash-Mufareh-headshot-2.webp"
+            alt=""
+          />
+        </div>
+        <div class="md:w-3/5 w-full">
+          <h4 class="text-3xl font-bold text-[#DBAE5A]">
+            Ash's success did not happen by chance.
+          </h4>
+          <p class="py-5">
+            He built global sales organizations with highly successful teams and
+            achieved financial freedom early in life. He has guided many
+            thousands toward personal and business growth, proving that
+            prosperity and principle can go hand in hand.
+          </p>
+          <button class="bttn px-3.5">
+            Register today to get you access code
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="lg:w-4xl max-w-full w-full flex flex-col m-auto items-center md:gap-15 gap:5 pt-10"
+      >
+        <div
+          class="about-ash-feature bg-[#0E1012] p-10 rounded-lg border-[#DBAE5A] border-r-5"
+        >
+          <h2 class="uppercase text-[40px]">A Life of Purpose</h2>
+          <p class="uppercase text-lg">
+            Dedicated to unity, prosperity, and integrity
+          </p>
+          <p class="pt-3">
+            For more than four decades, Ash Mufareh has pursued a mission to
+            create a world with less division and more prosperity, less deceit
+            and more integrity. He believes that when people are inspired to aim
+            higher and equipped with real skills, they not only uplift
+            themselves but also those around them.
+          </p>
+        </div>
+
+        <div class="about-ash-feature p-10 rounded-lg">
+          <h2 class="uppercase text-[40px]">Proven Success with Principle</h2>
+          <p class="uppercase text-lg">
+            Building people and businesses with integrity
+          </p>
+          <p class="pt-3">
+            Ash's success was no accident. He built global sales organizations,
+            led highly successful teams, and achieved financial freedom early in
+            life. Along the way, he guided thousands toward personal and
+            business growth, proving that prosperity and principle can go hand
+            in hand.
+          </p>
+        </div>
+
+        <div
+          class="about-ash-feature bg-[#0E1012] p-10 rounded-lg border-[#DBAE5A] border-r-5"
+        >
+          <h2 class="uppercase text-[40px]">Faith, Family, and Service</h2>
+          <p class="uppercase text-lg">Living the values he teaches</p>
+          <p class="pt-3">
+            Today, Ash places generosity and service above personal gain,
+            ensuring that helping the less fortunate is part of his family's
+            daily life. In his early fifties, he is a devoted husband and father
+            of two sons. Grounded in deep faith, he models honesty, compassion,
+            and purposeful living — consistently showing the drive,
+            determination, and strength to overcome obstacles with integrity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-5"
+      class="py-20 p-7.5 bg-(--color-dark-blue) lg:gap-12 gap-5 flex flex-col"
+    >
+      <h2 class="uppercase text-4xl text-center">Available only to members</h2>
+      <div
+        class="cards flex flex-row gap-5 lg:w-[1079px] w-full max-w-full m-auto flex-wrap"
+      >
+        <div
+          class="card card-1 border rounded-lg border-[#393E47] hover:border-[#DBAE5A] hover:bg-[#1C1D20] flex lg:flex-1 flex-col content-between w-full p-5"
+        >
+          <img
+            class="object-cover h-60 rounded-lg"
+            src="images/Generative-Ai-Workshop.webp"
+            alt="modern-building-with-glass-panels"
+          />
+          <div class="card-content-wrapper pt-5 flex gap-5 flex-col">
+            <div class="card-content">
+              <h4 class="text-[28px] font-bold">Generative AI Workshop</h4>
+              <p class="text-[#DBAE5A] pt-2">Sep 15, 2024</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card card-2 border rounded-lg border-[#393E47] hover:border-[#DBAE5A] hover:bg-[#1C1D20] flex lg:flex-1 flex-col content-between w-full p-5"
+        >
+          <img
+            class="object-cover h-60 rounded-lg"
+            src="images/Cloud-Computing-Summit.webp"
+            alt="modern-building-with-glass-panels"
+          />
+          <div class="card-content-wrapper pt-5 flex gap-5 flex-col">
+            <div class="card-content">
+              <h4 class="text-[28px] font-bold">Cloud Computing Summit</h4>
+              <p class="text-[#DBAE5A] pt-2">Aug 22, 2024</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card card-3 border rounded-lg border-[#393E47] hover:border-[#DBAE5A] hover:bg-[#1C1D20] flex lg:flex-1 flex-col content-between w-full p-5"
+        >
+          <img
+            class="object-cover h-60 rounded-lg"
+            src="images/Data-Analytics-masterclass.webp"
+            alt="modern-building-with-glass-panels"
+          />
+          <div class="card-content-wrapper pt-5 flex gap-5 flex-col">
+            <div class="card-content">
+              <h4 class="text-[28px] font-bold">Data Analytics Masterclass</h4>
+              <p class="text-[#DBAE5A] pt-2">Jul 10, 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-6"
+      class="py-20 p-7.5 lg:gap-12 gap-8 flex flex-col bg-[#0C121E]"
+    >
+      <div
+        class="content-wrapper gap-6 flex flex-col md:w-2xl w-full max-w-full m-auto"
+      >
+        <h2 class="uppercase text-5xl text-center text-white">
+          Your Membership Is Monitored and Managed
+        </h2>
+        <p class="text-center">
+          Unlock a world of opportunities and growth. The Circle offers
+          unparalleled benefits designed to elevate your professional and
+          personal journey.
+        </p>
+      </div>
+
+      <div
+        class="content-wrapper lg:w-5xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-center gap-14 text-center"
+      >
+        <div class="icon-card flex-1">
+          <svg
+            class="m-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+          >
+            <path
+              d="M40 52.5316V47.5316C40 44.8794 38.9464 42.3359 37.0711 40.4605C35.1957 38.5851 32.6522 37.5316 30 37.5316H15C12.3478 37.5316 9.8043 38.5851 7.92893 40.4605C6.05357 42.3359 5 44.8794 5 47.5316V52.5316M40 7.85156C42.1444 8.40749 44.0435 9.65972 45.3992 11.4117C46.7549 13.1637 47.4905 15.3163 47.4905 17.5316C47.4905 19.7468 46.7549 21.8994 45.3992 23.6514C44.0435 25.4034 42.1444 26.6556 40 27.2116M55 52.5316V47.5316C54.9983 45.3159 54.2609 43.1635 52.9034 41.4123C51.5459 39.6612 49.6453 38.4105 47.5 37.8566"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22.5 27.5317C28.0228 27.5317 32.5 23.0546 32.5 17.5317C32.5 12.0089 28.0228 7.53174 22.5 7.53174C16.9772 7.53174 12.5 12.0089 12.5 17.5317C12.5 23.0546 16.9772 27.5317 22.5 27.5317Z"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h5 class="font-bold text-xl text-white p-3">Integrity</h5>
+          <p class="">
+            Speak and act with honesty and fairness in every interaction
+          </p>
+        </div>
+        <div class="icon-card flex-1">
+          <svg
+            class="m-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+          >
+            <path
+              d="M52.5 33.6526C52.5 46.9338 43.2031 53.5744 32.1531 57.426C31.5745 57.6221 30.946 57.6127 30.3734 57.3994C19.2969 53.5744 10 46.9338 10 33.6526V15.0588C10 14.3543 10.2799 13.6787 10.778 13.1806C11.2761 12.6824 11.9518 12.4026 12.6562 12.4026C17.9688 12.4026 24.6094 9.21506 29.2312 5.17756C29.794 4.69678 30.5098 4.43262 31.25 4.43262C31.9902 4.43262 32.706 4.69678 33.2688 5.17756C37.9172 9.24162 44.5312 12.4026 49.8438 12.4026C50.5482 12.4026 51.2239 12.6824 51.722 13.1806C52.2201 13.6787 52.5 14.3543 52.5 15.0588V33.6526Z"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h5 class="font-bold text-xl text-white p-3">Dependability</h5>
+          <p class="">
+            Be someone others can count on. Follow through on your commitments.
+          </p>
+        </div>
+        <div class="icon-card flex-1">
+          <svg
+            class="m-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+          >
+            <path
+              d="M27.5 42.5317L32.5 47.5317C32.9925 48.0242 33.5771 48.4148 34.2205 48.6813C34.8639 48.9479 35.5536 49.085 36.25 49.085C36.9464 49.085 37.6361 48.9479 38.2795 48.6813C38.9229 48.4148 39.5075 48.0242 40 47.5317C40.4925 47.0393 40.8831 46.4547 41.1496 45.8112C41.4161 45.1678 41.5533 44.4782 41.5533 43.7817C41.5533 43.0853 41.4161 42.3957 41.1496 41.7523C40.8831 41.1088 40.4925 40.5242 40 40.0317"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M35.0001 35.0315L41.2501 41.2815C42.2446 42.2761 43.5936 42.8348 45.0001 42.8348C46.4066 42.8348 47.7555 42.2761 48.7501 41.2815C49.7446 40.287 50.3034 38.9381 50.3034 37.5315C50.3034 36.125 49.7446 34.7761 48.7501 33.7815L39.0501 24.0815C37.6438 22.677 35.7376 21.8881 33.7501 21.8881C31.7626 21.8881 29.8563 22.677 28.4501 24.0815L26.2501 26.2815C25.2555 27.2761 23.9066 27.8348 22.5001 27.8348C21.0936 27.8348 19.7446 27.2761 18.7501 26.2815C17.7555 25.287 17.1968 23.9381 17.1968 22.5315C17.1968 21.125 17.7555 19.7761 18.7501 18.7815L25.7751 11.7565C28.0557 9.48189 31.0298 8.03291 34.2267 7.63896C37.4235 7.24502 40.6605 7.92861 43.4251 9.58153L44.6001 10.2815C45.6645 10.924 46.9302 11.1468 48.1501 10.9065L52.5001 10.0315"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M52.5 7.53174L55 35.0317H50M7.5 7.53174L5 35.0317L21.25 51.2817C22.2446 52.2763 23.5935 52.835 25 52.835C26.4065 52.835 27.7554 52.2763 28.75 51.2817C29.7446 50.2872 30.3033 48.9383 30.3033 47.5317C30.3033 46.1252 29.7446 44.7763 28.75 43.7817M7.5 10.0317H27.5"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h5 class="font-bold text-xl text-white p-3">Accountability</h5>
+          <p class="">Own your words, your actions, and their results.</p>
+        </div>
+      </div>
+      <div
+        class="content-wrapper lg:w-5xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-center gap-14 text-center"
+      >
+        <div class="icon-card flex-1">
+          <svg
+            class="m-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+          >
+            <path
+              d="M40 27.5317L45 32.5317L55 22.5317M40 52.5317V47.5317C40 44.8796 38.9464 42.336 37.0711 40.4607C35.1957 38.5853 32.6522 37.5317 30 37.5317H15C12.3478 37.5317 9.8043 38.5853 7.92893 40.4607C6.05357 42.336 5 44.8796 5 47.5317V52.5317"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22.5 27.5317C28.0228 27.5317 32.5 23.0546 32.5 17.5317C32.5 12.0089 28.0228 7.53174 22.5 7.53174C16.9772 7.53174 12.5 12.0089 12.5 17.5317C12.5 23.0546 16.9772 27.5317 22.5 27.5317Z"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h5 class="font-bold text-xl text-white p-3">Action-taker</h5>
+          <p class="">
+            Move beyond talk. Take decisive steps toward your goals
+          </p>
+        </div>
+        <div class="icon-card flex-1">
+          <svg
+            class="m-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+          >
+            <path
+              d="M37.5 35.0317C38 32.5317 39.25 30.7817 41.25 28.7817C43.75 26.5317 45 23.2817 45 20.0317C45 16.0535 43.4196 12.2382 40.6066 9.42514C37.7936 6.61209 33.9782 5.03174 30 5.03174C26.0218 5.03174 22.2064 6.61209 19.3934 9.42514C16.5804 12.2382 15 16.0535 15 20.0317C15 22.5317 15.5 25.5317 18.75 28.7817C20.5 30.5317 22 32.5317 22.5 35.0317M22.5 45.0317H37.5M25 55.0317H35"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h5 class="font-bold text-xl text-white p-3">
+            Big thinker and dreamer
+          </h5>
+          <p class="">
+            Envision possibilities beyond today and inspire others to do the
+            same.
+          </p>
+        </div>
+        <div class="icon-card flex-1">
+          <svg
+            class="m-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="61"
+            viewBox="0 0 60 61"
+            fill="none"
+          >
+            <path
+              d="M50 7.53174H10C7.23858 7.53174 5 9.77031 5 12.5317V37.5317C5 40.2932 7.23858 42.5317 10 42.5317H50C52.7614 42.5317 55 40.2932 55 37.5317V12.5317C55 9.77031 52.7614 7.53174 50 7.53174Z"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 52.5317H40M30 42.5317V52.5317"
+              stroke="#DBAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h5 class="font-bold text-xl text-white p-3">Teachability</h5>
+          <p class="">Stay open to learning and to the ideas of others</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
