@@ -80,6 +80,7 @@ h4 {
     border-radius: 5px;
     border: 1px solid #ffab00;
     font-weight: 600;
+    text-align: center;
   }
 
   .bttn:hover {

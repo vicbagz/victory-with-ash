@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top-bar">
+    <div class="top-bar" id="top-bar">
       <p class="p-1 text-base md:text-xl lg:text-2xl text-center text-black">
         <strong>Attention:</strong> Lorem ipsum dolor sit amet, consectetur
         adipiscing elit, sed do
@@ -31,7 +31,7 @@
                 type="button"
                 command="--toggle"
                 commandfor="mobile-menu"
-                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-[#FFAB00]"
               >
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
@@ -79,18 +79,18 @@
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                   <a
-                    href="#"
+                    href="#top-bar"
                     aria-current="page"
                     class="rounded-md bg-gray-950/50 px-3 py-2 text-xl font-medium hover:text-[#C78C2B] uppercase"
                     >Home</a
                   >
                   <a
-                    href="#"
+                    href="#section-4"
                     class="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:text-[#C78C2B] uppercase"
                     >About</a
                   >
                   <a
-                    href="#"
+                    href="#section-7"
                     class="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:text-[#C78C2B] uppercase"
                     >Training and Benefits</a
                   >
@@ -126,21 +126,22 @@
         </el-disclosure>
       </nav>
 
-      <div id="hero-content-inner" class="pt-30 sm:pt-35">
+      <div id="hero-content-inner" class="pt-40">
         <div
           class="w-full md:w-4/5 flex lg:flex-row flex-col-reverse m-auto md:items-center gap-10 px-7.5"
         >
           <img
-            class="w-3/5 md:w-1/2"
+            class="w-3/5 md:w-1/2 m-auto"
             src="images/Ash-mufareh-headshot.webp"
             alt="Ash Mufareh"
           />
 
-          <div class="lg:w-[550px] w-full">
-            <h1 class="text-6xl lg:text-7xl xl:text-8xl text-white">
+          <div class="lg:w-[550px] w-full pb-10">
+            <p class="inline-block p-1 mb-2 rounded-sm text-white text-bold text-lg bg-gray-500 px-3">YES! You too can achieve</p>
+            <h1 class="text-4xl sm:text-6xl lg:text-5xl xl:text-6xl text-white">
               VICTORY WITH ASH
             </h1>
-            <h3 class="heading-bullet text-4xl xl:text-5xl text-white">
+            <h3 class="heading-bullet text-3xl xl:text-4xl text-white">
               RISE<img src="images/diamond-icon.png" alt="" />RESET<img
                 src="images/diamond-icon.png"
                 alt=""
@@ -151,7 +152,7 @@
                 <li>REFOCUS</li>
               </ul> -->
             </h3>
-            <h4 class="text-xl xl:text-2xl text-white">
+            <h4 class="text-xl xl:text-1.5xl text-white">
               TO SUCCEED IN LIFE AND WIN AT BUSINESS.
             </h4>
             <p class="py-5">
@@ -159,7 +160,15 @@
               membership community designed to help you grow as a person, build
               real skills, and make a positive impact on the world.
             </p>
-            <a href="#" class="bttn">Apply Now to Get Started</a>
+            <p>Here's how this private community can help you create real and lasting change.</p>
+
+            <h3 class="text-white font-bold py-5">Your Communications Hub and Training Center </h3>
+            <p>As we work together to pursue our big, bold, beautiful shared dream, we will communicate with you often and provide you with step-by-step training.
+Here you will strengthen your interpersonal communication skills, develop productive business habits, and gain practical marketing know-how.
+
+You will also receive the guidance and framework to set bold goals and follow a clear plan to achieve the success you deserve.</p>
+
+            <a href="#" class="bttn mt-5">Apply Now to Get Started</a>
           </div>
         </div>
       </div>
@@ -185,13 +194,13 @@
           />
           <div class="card-content-wrapper p-5 flex gap-5 flex-col">
             <div class="card-content">
-              <h4 class="text-[28px] font-bold text-white">Rise</h4>
+              <h4 class="text-2xl font-bold text-white mb-2">Rise</h4>
               <p class="">
                 Take action. Turn obstacles into victories. Ascend to
                 magnificent new heights.
               </p>
             </div>
-            <div><a href="#" class="bttn px-3.5">Read More</a></div>
+            <!-- <div><a href="#" class="bttn px-3.5">Read More</a></div> -->
           </div>
         </div>
         <div
@@ -204,15 +213,15 @@
           />
           <div class="card-content-wrapper p-5 flex gap-5 flex-col">
             <div class="card-content">
-              <h4 class="text-[28px] font-bold text-white">
-                Market Trends Analysis 2024
+              <h4 class="text-2xl font-bold text-white mb-2">
+                RESET
               </h4>
               <p class="">
                 Shatter limiting beliefs. Realign your mind and heart. Aspire to
                 achieving big, bold, and beautiful dreams.
               </p>
             </div>
-            <div><a href="#" class="bttn px-3.5">Read More</a></div>
+            <!-- <div><a href="#" class="bttn px-3.5">Read More</a></div> -->
           </div>
         </div>
         <div
@@ -225,15 +234,15 @@
           />
           <div class="card-content-wrapper p-5 flex gap-5 flex-col">
             <div class="card-content">
-              <h4 class="text-[28px] font-bold text-white">
-                Community Outreach Success
+              <h4 class="text-2xl font-bold text-white mb-2">
+                REFOCUS
               </h4>
               <p class="">
-                Take action. Turn obstacles into victories. Ascend to
-                magnificent new heights.
+               Uplift yourself, your family, your community, and the world.
+Multiply your power by focusing your time, energy and effort.
               </p>
             </div>
-            <div><a href="#" class="bttn px-3.5">Read More</a></div>
+            <!-- <div><a href="#" class="bttn px-3.5">Read More</a></div> -->
           </div>
         </div>
       </div>
@@ -254,7 +263,7 @@
         class="content-wrapper lg:w-6xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-center gap-14"
       >
         <div class="md:w-1/2 w-full">
-          <h4 class="text-3xl font-bold">Unlock Your First 90 Days</h4>
+          <h4 class="text-3xl font-bold text-white">Unlock Your First 90 Days</h4>
           <p class="text-lg text-[#f0c876]">
             Exclusive training & insights from Mr. Ash
           </p>
@@ -277,7 +286,7 @@
         </div>
         <div class="md:w-1/2 w-full">
           <img
-            class="gold-shadow object-cover"
+            class="m-auto w-3/5 md:w-full gold-shadow object-cover"
             src="images/ai-in-business-event.webp"
             alt=""
           />
@@ -293,39 +302,42 @@
         <h2 class="text-6xl text-[#C78C2B]">ASH Mufareh</h2>
       </div>
       <div
-        class="content-wrapper lg:w-4xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-center gap-15"
+        class="content-wrapper lg:w-4xl max-w-full w-full flex md:flex-row flex-col m-auto items-start gap-15"
       >
-        <div class="md:w-2/5 w-full">
+        <div class="sm:w-2/5 w-3/5 mx-auto">
           <img
-            class="gold-shadow object-cover"
+            class="m-auto gold-shadow object-cover"
             src="images/Ash-Mufareh-headshot-2.webp"
             alt=""
           />
         </div>
         <div class="md:w-3/5 w-full">
-          <h4 class="text-3xl font-bold text-[#DBAE5A]">
-            Ash's success did not happen by chance.
+          <h4 class="md:text-2xl text-1xl font-bold text-[#DBAE5A] pb-2">
+            For more than four decades,
           </h4>
-          <p class="py-5">
-            He built global sales organizations with highly successful teams and
-            achieved financial freedom early in life. He has guided many
-            thousands toward personal and business growth, proving that
-            prosperity and principle can go hand in hand.
+          <p class="mb-4">
+        Ash Mufareh has pursued a personal mission to create a world with less division and more prosperity, less deceit and more integrity. He believes that when people are inspired to aim higher and are equipped with real skills, they can uplift themselves along with those around them.Ash’s success did not happen by chance. He built global sales organizations with highly successful teams and achieved financial freedom early in life. He has guided many thousands toward personal and business growth, proving that prosperity and principle can go hand in hand.
           </p>
-          <a href="#" class="bttn px-3.5">
-            Register today to get you access code
-          </a>
+        <p class="mb-4">Today Ash places generosity and service above personal gain, making sure that helping the less fortunate is part of his family’s daily life. Now in his early fifties, Ash is a devoted family man with a loving wife and two sons. A person of deep faith, he consistently models the values he teaches: honesty, compassion, and purposeful living.</p>
+
+        <p class="mb-4">Ash carries a strong sense of right and wrong and has demonstrated the drive, determination, and spiritual strength to overcome obstacles that would have defeated a lesser man.</p>
+
+
+          </p>
+
         </div>
       </div>
 
       <div
-        class="lg:w-4xl max-w-full w-full flex flex-col m-auto items-center md:gap-15 gap:5 pt-10"
+        class="lg:w-4xl max-w-full w-full flex flex-col m-auto items-center md:gap-15 gap:15 pt-10"
       >
-        <div
+        <!-- <div
           class="about-ash-feature bg-[#0E1012] p-10 rounded-lg border-[#DBAE5A] border-r-5"
         >
-          <h2 class="uppercase text-[40px] text-white">A Life of Purpose</h2>
-          <p class="uppercase text-lg text-white">
+          <h2 class="uppercase md:text-[40px] text-4xl text-white">
+            A Life of Purpose
+          </h2>
+          <p class="uppercase text-lg text-white leading-none">
             Dedicated to unity, prosperity, and integrity
           </p>
           <p class="pt-3">
@@ -335,13 +347,13 @@
             higher and equipped with real skills, they not only uplift
             themselves but also those around them.
           </p>
-        </div>
+        </div> -->
 
-        <div class="about-ash-feature p-10 rounded-lg">
-          <h2 class="uppercase text-[40px] text-white">
+        <!-- <div class="about-ash-feature p-10 rounded-lg">
+          <h2 class="uppercase md:text-[40px] text-4xl text-white">
             Proven Success with Principle
           </h2>
-          <p class="uppercase text-lg text-white">
+          <p class="uppercase text-lg text-white leading-none"">
             Building people and businesses with integrity
           </p>
           <p class="pt-3">
@@ -351,12 +363,12 @@
             business growth, proving that prosperity and principle can go hand
             in hand.
           </p>
-        </div>
+        </div> -->
 
-        <div
+        <!-- <div
           class="about-ash-feature bg-[#0E1012] p-10 rounded-lg border-[#DBAE5A] border-r-5"
         >
-          <h2 class="uppercase text-[40px] text-white">
+          <h2 class="uppercase md:text-[40px] text-4xl text-white leading">
             Faith, Family, and Service
           </h2>
           <p class="uppercase text-lg text-white">
@@ -370,7 +382,29 @@
             and purposeful living — consistently showing the drive,
             determination, and strength to overcome obstacles with integrity.
           </p>
+        </div> -->
+        <h2 class="uppercase md:text-5xl text-4xl text-white leading">A Deeper Look at the Three R’s </h2>
+
+        <div class="about-ash-feature bg-[#0E1012] md:p-10 p-5 rounded-lg border-[#DBAE5A] border-r-5">
+        <h2 class="uppercase md:text-[40px] text-4xl text-white leading">
+            RISE
+          </h2>
+          <p class="pt-3">Rising begins with a decision. It is the moment you stop letting circumstances determine your results and you choose to act. To rise is to face life’s challenges head-on and turn obstacles into opportunities. Just as the sunrise announces a new day, rising signals the start of your own transformation. You may not always know the perfect action to take. Often, people only discover what works by stumbling across it. But one cannot stumble upon success while sitting still. That is why rising, standing up and moving forward, is essential. Personal, professional, and spiritual growth all start with the courage to move. When you rise, you declare that you are ready to grow beyond your current limits and claim a future filled with possibility. </p>
         </div>
+
+        <div class="about-ash-feature p-10 rounded-lg">
+        <h2 class="uppercase md:text-[40px] text-4xl text-white leading">
+            RESET
+          </h2>
+          <p class="pt-3">Once you have risen to meet the challenge, it is time to reset. Resetting is more than a pause; it is a conscious realignment. It means breaking free from limiting beliefs and patterns that no longer serve you. It is about taking an honest look at yourself. Just like resetting a clock or a device, you are deliberately choosing a fresh starting point… mentally, emotionally, physically, and spiritually. During a reset you clarify what matters most to you. You set bold, new, inspiring goals. You establish a fresh direction, adjusting attitudes and habits so they match the life you truly want to build. A reset creates the space for bigger dreams and gives you the focus and energy to pursue them. </p>
+        </div>
+        <div class="about-ash-feature bg-[#0E1012] md:p-10 p-5 rounded-lg border-[#DBAE5A] border-r-5">
+        <h2 class="uppercase md:text-[40px] text-4xl text-white leading">
+            REFOCUS
+          </h2>
+          <p class="pt-3">Refocusing is where your personal power becomes multiplied. Instead of scattering energy across too many distractions, you learn to direct your time, attention, and talents toward what matters most. True focus acts like a magnifying glass. It concentrates power without adding more effort, turning ordinary actions into extraordinary results. This final step expands your vision beyond personal success. Refocusing means balancing your own goals with the well-being of those around you, your family, your community, and ultimately the wider world. When you focus on making a difference, your achievements gain deeper meaning and your victory becomes a shared one. </p>
+        </div>
+
       </div>
     </section>
 
@@ -394,7 +428,7 @@
           />
           <div class="card-content-wrapper pt-5 flex gap-5 flex-col">
             <div class="card-content">
-              <h4 class="text-[28px] font-bold">Generative AI Workshop</h4>
+              <h4 class="text-2xl font-bold">Generative AI Workshop</h4>
               <p class="text-[#DBAE5A] pt-2">Sep 15, 2024</p>
             </div>
           </div>
@@ -409,7 +443,7 @@
           />
           <div class="card-content-wrapper pt-5 flex gap-5 flex-col">
             <div class="card-content">
-              <h4 class="text-[28px] font-bold">Cloud Computing Summit</h4>
+              <h4 class="text-2xl font-bold">Cloud Computing Summit</h4>
               <p class="text-[#DBAE5A] pt-2">Aug 22, 2024</p>
             </div>
           </div>
@@ -424,7 +458,7 @@
           />
           <div class="card-content-wrapper pt-5 flex gap-5 flex-col">
             <div class="card-content">
-              <h4 class="text-[28px] font-bold">Data Analytics Masterclass</h4>
+              <h4 class="text-2xl font-bold">Data Analytics Masterclass</h4>
               <p class="text-[#DBAE5A] pt-2">Jul 10, 2024</p>
             </div>
           </div>
@@ -439,13 +473,11 @@
       <div
         class="content-wrapper gap-6 flex flex-col md:w-2xl w-full max-w-full m-auto"
       >
-        <h2 class="uppercase text-5xl text-center text-white">
+        <h2 class="uppercase md:text-5xl text-4xl text-center text-white">
           Your Membership Is Monitored and Managed
         </h2>
         <p class="text-center">
-          Unlock a world of opportunities and growth. The Circle offers
-          unparalleled benefits designed to elevate your professional and
-          personal journey.
+          Membership in Victory With Ash is a privilege and is not guaranteed. To keep our community strong and focused, every member agrees to live by these core values:
         </p>
       </div>
 
@@ -623,6 +655,31 @@
           <p class="">Stay open to learning and to the ideas of others</p>
         </div>
       </div>
+
+      <div class="note rounded-lg gold-shadow bg-[#2F3031] border-[#DBAE5A] border p-5 flex flex-col md:flex-row gap-5 mt-10 md:w-160 w-full m-auto">
+        <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48px"
+              viewBox="0 -960 960 960"
+              width="48px"
+              fill="#C78C2B"
+            >
+              <path
+                d="M480-58q-14 0-27.09-5.48Q439.83-68.96 429-79L79-429q-10.04-10.83-15.52-23.91Q58-466 58-480t5.48-27.54Q68.96-521.07 79-531l350-350q10.83-10.96 23.91-15.98Q466-902 480-902t27.54 5.02Q521.07-891.96 531-881l350 350q10.96 9.93 15.98 23.46Q902-494 902-480t-5.02 27.09Q891.96-439.83 881-429L531-79q-9.93 10.04-23.46 15.52Q494-58 480-58Zm-36-370h73v-253h-73v253Zm36 123q15 0 26-10.5t11-25.5q0-15-11-26t-26-11q-15 0-25.5 11T444-341q0 15 10.5 25.5T480-305Z"
+              />
+            </svg>
+            <div class="flex-1"><h3 class="font-bold mb-2">Consequences</h3>
+            <p class="flex-1 text-[13px]">
+              We reserve the right to terminate membership for any violation of our Code of Conduct. Re-admittance is possible only if the member can clearly demonstrate meaningful change and a renewed commitment to these values.
+            </p>
+            <h3 class="mt-5 font-bold mb-2">Identity Verification</h3>
+            <p class="flex-1 text-[13px]">
+              To protect all members, we require basic proof of identity during registration. Details of the simple verification process appear on the sign-up page.
+            </p>
+            </div>
+
+          </div>
+          <a class="bttn w-65 max-w-full text-center m-auto" href="#" target="_blank">Apply to Join Now</a>
     </section>
 
     <section
@@ -630,8 +687,10 @@
       class="bg-[#040810] py-20 p-7.5 lg:gap-12 gap-8 flex flex-col"
     >
       <div class="text-center">
-        <h2 class="text-[40px] text-white">What To Expect in Your</h2>
-        <h2 class="text-6xl text-white">
+        <h2 class="md:text-[40px] text-3xl text-white">
+          What To Expect in Your
+        </h2>
+        <h2 class="md:text-6xl text-5xl text-white">
           First <span class="text-[#DBAE5A]">30</span> to
           <span class="text-[#DBAE5A]">90</span>Days
         </h2>
@@ -640,7 +699,7 @@
         class="content-wrapper lg:w-6xl max-w-full w-full flex md:flex-row flex-col-reverse m-auto items-start gap-6"
       >
         <div class="md:w-1/2 w-full bg-[#0C1524] p-10 rounded-xl">
-          <h4 class="uppercase text-3xl text-[#DBAE5A] font-medium">
+          <h4 class="uppercase md:text-3xl text-2xl text-[#DBAE5A] font-medium">
             Benefits you can feel and see:
           </h4>
           <p class="text-base uppercase pt-1 pb-5 leading-none">
@@ -648,23 +707,23 @@
           </p>
           <ul class="c-list list-image-[url(images/check_circle.svg)] pl-7">
             <li>
-              Become noticeably happier and calmer as daily stress and
+              <strong>Become noticeably happier and calmer</strong> as daily stress and
               self-doubt lose their grip.
             </li>
             <li>
-              Envision a vivid picture of your bright future. Imagine having the
+              <strong>Envision a vivid picture of your bright future.</strong> Imagine having the
               life and impact you truly want.
             </li>
             <li>
-              Set bold, measurable goals and begin mapping the first concrete
+              <strong>Set bold, measurable goals</strong> and begin mapping the first concrete
               steps to achieve them.
             </li>
             <li>
-              Strengthen your communication skills to connect, persuade, and
+              <strong>Strengthen your communication skills</strong> to connect, persuade, and
               inspire with confidence.
             </li>
             <li>
-              Begin mastering modern marketing and business strategies that can
+              <strong>Begin mastering modern marketing and business strategies</strong> that can
               create fresh streams of income.
             </li>
           </ul>
@@ -685,12 +744,12 @@
             </svg>
             <p class="flex-1 text-[13px]">
               These are not vague promises. They are the practical outcomes that
-              members consistently work toward inside Victory With ASH.
+              members consistently work toward inside <strong>Victory With ASH</strong>.
             </p>
           </div>
         </div>
         <div class="md:w-1/2 w-full bg-[#0C1524] p-10 rounded-xl">
-          <h4 class="uppercase text-3xl text-[#DBAE5A] font-medium">
+          <h4 class="uppercase md:text-3xl text-2xl text-[#DBAE5A] font-medium">
             Training That Makes It Happen
           </h4>
           <p class="text-base uppercase pt-1 pb-5 leading-none">
@@ -699,25 +758,22 @@
           </p>
           <ul class="c-list list-image-[url(images/check_circle.svg)] pl-7">
             <li>
-              Master Personal Communication. Speak and listen with clarity and
+              <strong>Master Personal Communication.</strong> Speak and listen with clarity and
               confidence.
             </li>
             <li>
-              Envision a vivid picture of your bright future. Imagine having the
-              life and impact you truly want.
+              <strong>Lead with Influence.</strong> Build the traits of a leader who inspires action and trust.
             </li>
             <li>
-              Set bold, measurable goals and begin mapping the first concrete
-              steps to achieve them.
+              <strong>Set and Achieve Bold Goals.</strong> Turn big dreams into measurable results.
             </li>
             <li>
-              Strengthen your communication skills to connect, persuade, and
-              inspire with confidence.
+              <strong>Market Yourself on Social Media.</strong> Create a professional presence that attracts opportunity.
             </li>
             <li>
-              Begin mastering modern marketing and business strategies that can
-              create fresh streams of income.
+              <strong>Persuade Without Pressure.</strong> Sell ideas and solutions without sounding “sales-y.”
             </li>
+            <li><strong>Get More from AI and Other Emerging Tech.</strong> Harness AI and the new tools developed by Ash’s team to work smarter and grow your business. </li>
           </ul>
 
           <div
@@ -735,25 +791,24 @@
               />
             </svg>
             <p class="flex-1 text-[13px]">
-              These trainings are designed to give you skills you can apply
-              immediately, helping you grow personally and professionally while
-              creating lasting impact in your family, community, and beyond.
+              These trainings are designed to give you skills you can apply immediately, helping you grow personally and professionally while creating lasting impact in your family, community, and beyond.
             </p>
           </div>
         </div>
+
+
       </div>
+      <a class="bttn w-65 max-w-full text-center m-auto" href="#" target="_blank">Apply to Join Now</a>
     </section>
 
     <section id="cta-footer" class="bg-[#0C121E] text-center py-20 p-7.5">
       <div class="content-wrapper md:w-6xl w-full max-w-full m-auto">
-        <h2 class="uppercase text-5xl text-white mb-6">
+        <h2 class="uppercase md:text-5xl text-4xl text-white mb-6">
           Your journey to personal and professional victory begins the moment
           you decide to join.
         </h2>
         <p class="md:w-2xl w-full max-w-full m-auto mb-5">
-          Unlock a world of opportunities and growth. The Circle offers
-          unparalleled benefits designed to elevate your professional and
-          personal journey.
+If you are ready to rise, reset, and refocus to achieve more than you thought possible, <a class="a-link" href="#">apply to join today.</a>
         </p>
       </div>
       <a href="#" class="bttn">Apply Now to Get Started</a>
@@ -761,7 +816,7 @@
 
     <div class="text-white bg-black p-6">
       <div
-        class="footer-wrapper flex flex-row justify-between items-center md:w-7xl m-auto max-w-full w-full"
+        class="footer-wrapper flex lg:flex-row flex-col gap-3 justify-between items-center md:w-7xl m-auto max-w-full w-full"
       >
         <p class="powered-by">
           Powered by
