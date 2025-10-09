@@ -121,6 +121,16 @@ h4 {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  background: #020203;
+  z-index: 999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 5px 20px #ffffff14;
+}
+
 #hero-banner {
   background-image: url(images/Hero-banner.webp);
   background-size: cover;
